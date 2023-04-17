@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Slider</title>
+
+    <link rel="stylesheet" href="/styles/mormalize.min.css" />
+    <link rel="stylesheet" href="/styles/normalize.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+    <link rel="stylesheet" href="/styles/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="/scripts/main.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="inner-wrapper">
+        <div class="slider-wrapper">
+          <div class="slider-item fade">
+            <div class="slider-number">1 / 3</div>
+            <div class="slider-image">
+              <img src="/assets/image-01.avif" alt="" />
+            </div>
+            <div class="title">Create Account</div>
+            <div class="desc">Tell us who you are</div>
+            <input type="text" placeholder="Your name" />
+          </div>
+
+          <div class="slider-item fade">
+            <div class="slider-number">2 / 3</div>
+            <div class="slider-image">
+              <img src="/assets/image-02.avif" alt="" />
+            </div>
+            <div class="title">Security Info</div>
+            <div class="desc">Enter a strong password</div>
+            <input type="password" placeholder="Your password" />
+          </div>
+
+          <div class="slider-item fade">
+            <div class="slider-number">3 / 3</div>
+            <div class="slider-image">
+              <img src="/assets/image-03.png" alt="" />
+            </div>
+            <div class="title">Get Started</div>
+            <div class="desc">You're all set and ready!</div>
+            <button>Lets Go!</button>
+          </div>
+
+          <div class="arrow-wrapper">
+            <a class="prev-arrow" onclick="handleClickArrow(-1)">
+              <i class="ti ti-arrow-left"></i
+            ></a>
+            <a class="next-arrow" onclick="handleClickArrow(1)">
+              <i class="ti ti-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="slider-dots">
+          <span class="dot-item" onclick="hancleChangeCurrSlide(1)"></span>
+          <span class="dot-item" onclick="hancleChangeCurrSlide(2)"></span>
+          <span class="dot-item" onclick="hancleChangeCurrSlide(3)"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
